@@ -53,6 +53,11 @@ namespace Chatbot1
 
         private void Chat_TextChanged(object sender, TextChangedEventArgs e)
         {
+        
+        }
+
+        private void Schreibbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }

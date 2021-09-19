@@ -9,6 +9,5 @@ namespace Chatbot1
     public interface IStorage
     {
         void Load();
-
     }
 }

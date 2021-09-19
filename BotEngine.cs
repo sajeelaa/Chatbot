@@ -10,6 +10,9 @@ namespace Chatbot1
     {
         public static List<Message> MessagesList = new List<Message>();
 
+        /// <summary>
+        /// CTOR
+        /// </summary>
         public BotEngine()
         {
 
@@ -23,6 +26,11 @@ namespace Chatbot1
             set { _answer = value; }
         }
 
+        /// <summary>
+        /// Methode GetAnswer
+        /// </summary>
+        /// <param name="E"></param>
+        /// <returns></returns>
         public string GetAnswer(string E)
         {
             foreach (var A in MessagesList)
@@ -32,7 +40,8 @@ namespace Chatbot1
                     return A.Answer;
                 }
             }
-            //@# Heiist Es wurde nicht gefunden
+        
+            //@# Heisst Es wurde nicht gefunden
             return "@#-%&";
         }
     }
